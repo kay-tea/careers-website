@@ -9,18 +9,26 @@
     #banner {
       height: 360px;
       width: 100%;
+      margin-bottom:16px;
     }
   </style>
   <title>Careers</title>
   
 </head>
 <body>
+  {% include 'nav.html' %}
   <div class="container">
-    <h1 class="text-center mt-2 mb-4"> {{company_name}} Careers!</h1>
-    <h3 class="text-center">Hello there welcome to the website</h3>
     <img id="banner" src="https://careers-website--kay-tea.repl.co/static/computer_img.jpg" class="img-fluid">
-    <h2 class="text-center mt-2 mb-4">About</h2>
-    <p class="lead">I'm baby blackbird spyplanergboklyn disrupt, chicharrones readymade tumeric flannel. Etsy tumblr ugh, slow-carb four loko grailed Brooklyn air plant heirloom literally microdosing PBR&B locavore banjo same. Cloud bread gentrify meggings tacos, four loko tilde JOMO. Unicorn mumblecore blue bottle, kitsch vexillologist artisan literally gentrify locavore yr la croix vegan raw denim pug.</p>
+    <h1 class="text-center mt-2 mb-4"> {{company_name}} Careers!</h1>
+    <div class="row" style="margin-bottom:20px;">
+      <div class="col-md-6">
+        <p class="lead">I'm baby blackbird spyplanergboklyn disrupt, chicharrones readymade tumeric flannel. Etsy tumblr ugh, slow-carb four loko grailed Brooklyn air plant heirloom literally microdosing PBR&B locavore banjo same. Cloud bread gentrify meggings tacos, four loko tilde JOMO. Unicorn mumblecore blue bottle, kitsch vexillologist artisan literally gentrify locavore yr la croix vegan raw denim pug.
+        </p>
+      </div>
+      <div class="d-none d-md-block col-md-6">
+        <img src="/static/team_img.jpg" style="height:380px;border-radius:4px;";>
+      </div> 
+    </div>
     <h2 class="text-center mt-2 mb-4">Open Positions</h2>
     <div>
       {% for job in jobs %}
@@ -28,8 +36,9 @@
       {% endfor %}
     </div>
     <div class="text-center">
-      <button class="btn btn-primary btn-lg">Contact</button>
+      <a class="btn btn-primary btn-lg" href="mailto:katelyna334@gmail.com?subject=Question&body=My%20name%3A%20%3Cyour%20name%20here%3E%0D%0A%0D%0AMy%20Question%3A%20%3Cyour%20question%20here%3E%0D%0A%0D%0A">Contact</a>
     </div>
   </div>
+  {% include 'footer.html' %}
 </body>
 </html>
