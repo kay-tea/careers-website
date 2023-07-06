@@ -14,5 +14,6 @@ Steps
  - Create jobs table and add data using MySQL Workbench
  - Connect to database from Replit using SQLAlchemy
 
- Step 2: Create Database-driven dynamic pages
- Step 3: Store submitted applications in database
+Step 2: Create Database-driven dynamic pages
+ - use mysql workbench to generate tables
+Step 3: Store submitted applications in database
