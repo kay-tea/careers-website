@@ -17,6 +17,14 @@ Steps
 Step 2: Create Database-driven dynamic pages
  - use mysql workbench to generate tables
 Step 3: Store submitted applications in database
+ - add a form to collect applications on job details page
+ - create a flask route to handle application form submissions
+ - create a table to store applications in cloud database
+ - store submitted applications and show acknkowledgement
+
+step 4: 
+ - validate application for responses before submission
+ - provide an API to access individual job listings and applications by ID
 
 
 
