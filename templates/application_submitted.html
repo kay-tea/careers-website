@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {% include 'bootstraphead.html' %}
+  <title>Application Submitted</title>
+</head>
+<body>
+  {% include 'nav.html' %}
+  {% include 'banner.html' %}
+  <div class='container'>
+    <h1 class='text-center'>Katies Careers</h1>
+    <div>
+      <h4>Thank you, {{application['full_name']}}!</h4>
+      <h4>Your application for {{job.title}} has been submitted!</h4> 
+    </div>
+  </div>
+  {% include 'footer.html' %}
+</body>
+</html>

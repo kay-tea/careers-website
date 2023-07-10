@@ -23,3 +23,14 @@ def load_single_job_from_db(id):
     else:
       return dict(rows[0])
 
+def add_application_to_db(job_id, application):
+  row = {
+    "job_id": job_id,
+    "full_name": application['full_name'],
+    "email": application['email'],
+    "linkedin_url": application['linkedin_url']
+  }
+  with engine.connect() as conn:
+    query = text("INSERT INTO applications (job_id, full_name, email, linkedin_url) VALUES (:job_id, :full_name, :email, :linkedin_url)")
+
+    conn.execute(query, row)
