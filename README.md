@@ -21,7 +21,7 @@ Step 3: Store submitted applications in database
 
 
 TODO 
- - add captcha
+ - add captcha https://www.hcaptcha.com/
  - create an admin login interface to check submitted applications
  - allow admins to mark applications as accepted/rejected
  - create a user login interface to check application status
