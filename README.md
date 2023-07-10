@@ -17,3 +17,12 @@ Steps
 Step 2: Create Database-driven dynamic pages
  - use mysql workbench to generate tables
 Step 3: Store submitted applications in database
+
+
+
+TODO 
+ - add captcha
+ - create an admin login interface to check submitted applications
+ - allow admins to mark applications as accepted/rejected
+ - create a user login interface to check application status
+

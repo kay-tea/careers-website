@@ -22,6 +22,11 @@ def apply_to_job(id):
   add_application_to_db(id, data)
   return render_template('application_submitted.html', application=data, job=job)
 
+@app.route("/api/jobs/<id>")
+def show_job_api(id):
+  job = load_single_job_from_db(id)
+  return jsonify(job)
+
 @app.route("/api/jobs")
 def list_jobs():
   jobs_list = load_all_jobs_from_db()
